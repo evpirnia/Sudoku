@@ -6,8 +6,8 @@
  */
 public class SudokuTest {
 	public static void main(String[] arg) {
-		
-		/* if my Sudoku is able to solve this then my algorithm works because
+
+		/* If my Sudoku is able to solve this then my algorithm works because
 		 * Google said that this is the hardest sudoku out there */
 		int [] [] myTest = {
 	            {8, 0, 0, 0, 0, 0, 0, 0, 0},
@@ -21,7 +21,7 @@ public class SudokuTest {
 	            {0, 9, 0, 0, 0, 0, 4, 0, 0}};
 
 		testSudoku("my own test", myTest, null);
-		
+
 		/* */
 		int [] [] example = {
 	            {7, 8, 0, 0, 9, 0, 0, 2, 0},
@@ -33,7 +33,7 @@ public class SudokuTest {
 	            {0, 0, 0, 9, 6, 3, 0, 0, 0},
 	            {6, 4, 1, 0, 0, 0, 0, 0, 3},
 	            {0, 9, 0, 0, 1, 0, 0, 5, 7}};
-	
+
 		int [] [] solution = {
 	             {7, 8, 3, 4, 9, 6, 1, 2, 5},
 	             {1, 2, 5, 7, 3, 8, 9, 6, 4},
@@ -44,7 +44,7 @@ public class SudokuTest {
 	             {8, 5, 7, 9, 6, 3, 2, 4, 1},
 	             {6, 4, 1, 5, 2, 7, 8, 9, 3},
 	             {3, 9, 2, 8, 1, 4, 6, 5, 7}};
-	
+
 		int [] [] example2 = {
 	             {0, 6, 0, 9, 0, 8, 0, 1, 0},
 	             {0, 0, 4, 0, 0, 0, 0, 0, 0},
@@ -55,7 +55,7 @@ public class SudokuTest {
 	             {0, 7, 8, 0, 0, 0, 9, 0, 5},
 	             {0, 0, 0, 0, 0, 0, 6, 0, 0},
 	             {0, 1, 0, 3, 0, 2, 0, 4, 0}};
-	
+
 		int [] [] solution2 = {
 	              {7, 6, 5, 9, 4, 8, 2, 1, 3},
 	              {1, 2, 4, 5, 3, 6, 7, 8, 9},
@@ -66,7 +66,7 @@ public class SudokuTest {
 	              {3, 7, 8, 6, 1, 4, 9, 2, 5},
 	              {4, 5, 2, 8, 9, 7, 6, 3, 1},
 	              {6, 1, 9, 3, 5, 2, 8, 4, 7}};
-	
+
 		/* a hard sudoku known as AI Escargot */
 		int [] [] example3 = {
 	             {1, 0, 0, 0, 0, 7, 0, 9, 0},
@@ -78,10 +78,10 @@ public class SudokuTest {
 	             {3, 0, 0, 0, 0, 0, 0, 1, 0},
 	             {0, 4, 0, 0, 0, 0, 0, 0, 7},
 	             {0, 0, 7, 0, 0, 0, 3, 0, 0}};
-	
+
 		testSudoku("example 1", example, solution);
 		testSudoku("example 2", example2, solution2);
-		testSudoku("AI Escargot", example3, null);	
+		testSudoku("AI Escargot", example3, null);
 	}
 
 	/**
